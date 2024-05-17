@@ -254,11 +254,11 @@ class DPOInference:
             if self.is_encoder_decoder
             else {}
         )
-        device = concatenated_batch["concatenated_attention_mask"].device
-        model = model.to(device)
+        #device = concatenated_batch["concatenated_attention_mask"].device
+        #model = model.to(device)
         all_logits = model(
-            concatenated_batch["concatenated_input_ids"].to(device),
-            attention_mask=concatenated_batch["concatenated_attention_mask"],
+            concatenated_batch["concatenated_input_ids"].to("cuda"),
+            attention_mask=concatenated_batch["concatenated_attention_mask"].to("cuda"),
             **model_kwargs,
         ).logits
 
@@ -417,38 +417,54 @@ def pad_to_length(tensor: torch.Tensor, length: int, pad_value: Union[int, float
             dim=dim,
         )
 
-dataset = load_dataset("HuggingFaceH4/ultrafeedback_binarized", split='test_prefs')
-column_names = list(dataset.features)
+dataset_ultra = load_dataset("HuggingFaceH4/ultrafeedback_binarized", split='test_prefs')
+
 #tokenized_dataset = dataset.map(dpo.tokenize_row, remove_columns=column_names)
-model = AutoModelForCausalLM.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_4")
-ref_model = AutoModelForCausalLM.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_3")
-tokenizer = AutoTokenizer.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_4")
-dpo = DPOInference(
-    model,
-    ref_model,
-    tokenizer=tokenizer,
-    accelerator=accelerator,
-    ref_free_norm=False,
-    # norm is norm, avg is average, sum is sum
-)
-tokenized_dataset = dataset.map(dpo.tokenize_row, remove_columns=column_names)
-# tokenize dataset
-column_names = list(dataset.features)
-print(column_names)
-from trl.trainer.utils import DPODataCollatorWithPadding
-tokenized_dataset = dataset.map(dpo.tokenize_row, remove_columns=column_names)
-dataloader = torch.utils.data.DataLoader(
-    tokenized_dataset,
-    batch_size=1,
-    collate_fn=DPODataCollatorWithPadding(
-        pad_token_id=tokenizer.pad_token_id,
-        label_pad_token_id=dpo.label_pad_token_id,
-        is_encoder_decoder=dpo.is_encoder_decoder,
-    ),
-    # collate_fn = lambda x: x, # fix weird batching error
-    shuffle=False,
-    drop_last=False,
-)
-for step, batch in enumerate(tqdm(dataloader, desc="RM batch steps")):
-    rewards_chosen, rewards_rejected = dpo.inference_step(batch, ref_free=False)
-    print("chosen and rejected: ", rewards_chosen, rewards_rejected)
+
+def error_analysis(model, ref_model, tokenizer, name, dataset=dataset_ultra):
+    dpo = DPOInference(
+        model,
+        ref_model,
+        tokenizer=tokenizer,
+        accelerator=accelerator,
+        ref_free_norm=False,
+        # norm is norm, avg is average, sum is sum
+    )
+    column_names = list(dataset.features)
+    tokenized_dataset = dataset.map(dpo.tokenize_row, remove_columns=column_names)
+    # tokenize dataset
+    #column_names = list(dataset.features)
+    #print(column_names)
+    from trl.trainer.utils import DPODataCollatorWithPadding
+    tokenized_dataset = dataset.map(dpo.tokenize_row, remove_columns=column_names)
+    dataloader = torch.utils.data.DataLoader(
+        tokenized_dataset,
+        batch_size=12,
+        collate_fn=DPODataCollatorWithPadding(
+            pad_token_id=tokenizer.pad_token_id,
+            label_pad_token_id=dpo.label_pad_token_id,
+            is_encoder_decoder=dpo.is_encoder_decoder,
+        ),
+        # collate_fn = lambda x: x, # fix weird batching error
+        shuffle=False,
+        drop_last=False,
+    )
+    for step, batch in enumerate(tqdm(dataloader, desc="RM batch steps")):
+        rewards_chosen, rewards_rejected = dpo.inference_step(batch, ref_free=False)
+        print("chosen and rejected: ", rewards_chosen, rewards_rejected, rewards_chosen.size())
+        with open(f"./{name}.txt", "w") as f:
+            for idx in range(rewards_chosen.size(0)):
+                f.write(str(float(rewards_chosen[idx]))+ ','+ str(float(rewards_rejected[idx])))
+                f.write('\n')
+
+
+model = AutoModelForCausalLM.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_2", device_map="auto")
+ref_model = AutoModelForCausalLM.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_1", device_map="auto")
+tokenizer = AutoTokenizer.from_pretrained("ShenaoZhang/0.001_zephyr_5551_4iters_bs256_iter_2", device_map="auto")
+error_analysis(model, ref_model, tokenizer, "error_selm")
+
+
+model = AutoModelForCausalLM.from_pretrained("ZhangShenao/0.0_zephyr_withdpo_4iters_bs128_5551lr_iter_2", device_map="auto")
+ref_model = AutoModelForCausalLM.from_pretrained("ZhangShenao/0.0_zephyr_withdpo_4iters_bs128_5551lr_iter_1", device_map="auto")
+tokenizer = AutoTokenizer.from_pretrained("ZhangShenao/0.0_zephyr_withdpo_4iters_bs128_5551lr_iter_2", device_map="auto")
+error_analysis(model, ref_model, tokenizer, "error_dpo")
