@@ -9,4 +9,81 @@
 Map:   0%|          | 0/2000 [00:00<?, ? examples/s]Map:   1%|          | 23/2000 [00:00<00:09, 219.42 examples/s]Map:   3%|▎         | 61/2000 [00:00<00:06, 308.15 examples/s]Map:   5%|▍         | 96/2000 [00:00<00:05, 323.12 examples/s]Map:   7%|▋         | 140/2000 [00:00<00:05, 365.31 examples/s]Token indices sequence length is longer than the specified maximum sequence length for this model (2362 > 2048). Running this sequence through the model will result in indexing errors
 Map:   9%|▉         | 187/2000 [00:00<00:05, 335.91 examples/s]Map:  11%|█▏        | 228/2000 [00:00<00:05, 353.57 examples/s]Map:  14%|█▍        | 284/2000 [00:00<00:04, 356.58 examples/s]Map:  17%|█▋        | 336/2000 [00:00<00:04, 344.30 examples/s]Map:  19%|█▉        | 375/2000 [00:01<00:04, 348.75 examples/s]Map:  21%|██        | 416/2000 [00:01<00:04, 360.73 examples/s]Map:  23%|██▎       | 453/2000 [00:01<00:04, 357.82 examples/s]Map:  25%|██▍       | 494/2000 [00:01<00:04, 367.10 examples/s]Map:  27%|██▋       | 531/2000 [00:01<00:04, 366.22 examples/s]Map:  28%|██▊       | 569/2000 [00:01<00:03, 366.03 examples/s]Map:  31%|███       | 619/2000 [00:01<00:03, 350.22 examples/s]Map:  33%|███▎      | 656/2000 [00:01<00:03, 351.10 examples/s]Map:  35%|███▍      | 699/2000 [00:01<00:03, 368.53 examples/s]Map:  37%|███▋      | 744/2000 [00:02<00:03, 386.10 examples/s]Map:  39%|███▉      | 783/2000 [00:02<00:03, 382.18 examples/s]Map:  42%|████▏     | 841/2000 [00:02<00:03, 376.49 examples/s]Map:  44%|████▍     | 880/2000 [00:02<00:02, 377.69 examples/s]Map:  46%|████▋     | 929/2000 [00:02<00:03, 348.34 examples/s]Map:  49%|████▉     | 977/2000 [00:02<00:03, 333.14 examples/s]Map:  51%|█████     | 1015/2000 [00:03<00:05, 184.91 examples/s]Map:  53%|█████▎    | 1052/2000 [00:03<00:04, 211.84 examples/s]Map:  55%|█████▍    | 1090/2000 [00:03<00:03, 239.35 examples/s]Map:  56%|█████▌    | 1122/2000 [00:03<00:03, 254.47 examples/s]Map:  58%|█████▊    | 1162/2000 [00:03<00:02, 286.11 examples/s]Map:  60%|██████    | 1200/2000 [00:03<00:02, 307.45 examples/s]Map:  62%|██████▏   | 1249/2000 [00:03<00:02, 308.43 examples/s]Map:  64%|██████▍   | 1286/2000 [00:04<00:02, 321.53 examples/s]Map:  66%|██████▋   | 1327/2000 [00:04<00:01, 340.49 examples/s]Map:  69%|██████▉   | 1377/2000 [00:04<00:01, 333.19 examples/s]Map:  71%|███████   | 1415/2000 [00:04<00:01, 339.63 examples/s]Map:  73%|███████▎  | 1455/2000 [00:04<00:01, 350.79 examples/s]Map:  75%|███████▍  | 1491/2000 [00:04<00:01, 345.06 examples/s]Map:  77%|███████▋  | 1534/2000 [00:04<00:01, 357.37 examples/s]Map:  79%|███████▉  | 1576/2000 [00:04<00:01, 368.50 examples/s]Map:  81%|████████  | 1614/2000 [00:04<00:01, 370.06 examples/s]Map:  83%|████████▎ | 1654/2000 [00:05<00:00, 376.38 examples/s]Map:  85%|████████▍ | 1692/2000 [00:05<00:00, 373.03 examples/s]Map:  87%|████████▋ | 1733/2000 [00:05<00:00, 378.72 examples/s]Map:  89%|████████▉ | 1789/2000 [00:05<00:00, 373.18 examples/s]Map:  92%|█████████▏| 1834/2000 [00:05<00:00, 276.94 examples/s]Map:  94%|█████████▎| 1874/2000 [00:05<00:00, 298.68 examples/s]Map:  96%|█████████▌| 1917/2000 [00:05<00:00, 327.61 examples/s]Map:  98%|█████████▊| 1963/2000 [00:05<00:00, 316.47 examples/s]Map: 100%|██████████| 2000/2000 [00:06<00:00, 182.29 examples/s]Map: 100%|██████████| 2000/2000 [00:06<00:00, 309.52 examples/s]
 Map:   0%|          | 0/2000 [00:00<?, ? examples/s]Map:   3%|▎         | 53/2000 [00:00<00:03, 497.01 examples/s]Map:   6%|▌         | 113/2000 [00:00<00:03, 552.85 examples/s]Map:  10%|█         | 202/2000 [00:00<00:03, 567.87 examples/s]Map:  13%|█▎        | 261/2000 [00:00<00:03, 571.17 examples/s]Map:  18%|█▊        | 352/2000 [00:00<00:02, 582.79 examples/s]Map:  21%|██        | 414/2000 [00:00<00:02, 592.09 examples/s]Map:  24%|██▍       | 478/2000 [00:00<00:02, 604.14 examples/s]Map:  27%|██▋       | 542/2000 [00:00<00:02, 613.54 examples/s]Map:  31%|███▏      | 629/2000 [00:01<00:02, 587.69 examples/s]Map:  35%|███▍      | 697/2000 [00:01<00:02, 606.15 examples/s]Map:  38%|███▊      | 766/2000 [00:01<00:01, 627.41 examples/s]Map:  43%|████▎     | 859/2000 [00:01<00:01, 621.82 examples/s]Map:  47%|████▋     | 949/2000 [00:01<00:01, 609.73 examples/s]Map:  51%|█████▏    | 1027/2000 [00:02<00:02, 335.68 examples/s]Map:  55%|█████▍    | 1091/2000 [00:02<00:02, 380.70 examples/s]Map:  57%|█████▋    | 1149/2000 [00:02<00:02, 415.12 examples/s]Map:  61%|██████    | 1211/2000 [00:02<00:01, 454.17 examples/s]Map:  64%|██████▎   | 1273/2000 [00:02<00:01, 489.02 examples/s]Map:  67%|██████▋   | 1336/2000 [00:02<00:01, 521.82 examples/s]Map:  70%|██████▉   | 1397/2000 [00:02<00:01, 542.00 examples/s]Map:  73%|███████▎  | 1458/2000 [00:02<00:00, 552.95 examples/s]Map:  76%|███████▌  | 1519/2000 [00:02<00:00, 565.74 examples/s]Map:  79%|███████▉  | 1585/2000 [00:02<00:00, 589.67 examples/s]Map:  83%|████████▎ | 1655/2000 [00:03<00:00, 618.44 examples/s]Map:  86%|████████▌ | 1723/2000 [00:03<00:00, 626.31 examples/s]Map:  90%|████████▉ | 1793/2000 [00:03<00:00, 641.90 examples/s]Map:  93%|█████████▎| 1859/2000 [00:03<00:00, 644.19 examples/s]Map:  96%|█████████▋| 1928/2000 [00:03<00:00, 653.61 examples/s]Map: 100%|██████████| 2000/2000 [00:03<00:00, 327.98 examples/s]Map: 100%|██████████| 2000/2000 [00:04<00:00, 481.24 examples/s]
-RM batch steps:   0%|          | 0/167 [00:00<?, ?it/s]RM batch steps:   1%|          | 1/167 [00:51<2:23:31, 51.87s/it]RM batch steps:   1%|          | 2/167 [01:33<2:05:24, 45.60s/it]RM batch steps:   2%|▏         | 3/167 [02:30<2:19:42, 51.11s/it]RM batch steps:   2%|▏         | 4/167 [03:08<2:04:52, 45.97s/it]RM batch steps:   3%|▎         | 5/167 [04:00<2:09:11, 47.85s/it]RM batch steps:   4%|▎         | 6/167 [04:26<1:48:54, 40.58s/it]RM batch steps:   4%|▍         | 7/167 [05:15<1:55:07, 43.17s/it]RM batch steps:   5%|▍         | 8/167 [06:02<1:58:12, 44.61s/it]RM batch steps:   5%|▌         | 9/167 [06:57<2:05:53, 47.80s/it]RM batch steps:   6%|▌         | 10/167 [07:45<2:05:28, 47.96s/it]RM batch steps:   7%|▋         | 11/167 [08:31<2:02:46, 47.22s/it]RM batch steps:   7%|▋         | 12/167 [09:13<1:57:48, 45.60s/it]
+RM batch steps:   0%|          | 0/167 [00:00<?, ?it/s]RM batch steps:   1%|          | 1/167 [00:51<2:23:31, 51.87s/it]RM batch steps:   1%|          | 2/167 [01:33<2:05:24, 45.60s/it]RM batch steps:   2%|▏         | 3/167 [02:30<2:19:42, 51.11s/it]RM batch steps:   2%|▏         | 4/167 [03:08<2:04:52, 45.97s/it]RM batch steps:   3%|▎         | 5/167 [04:00<2:09:11, 47.85s/it]RM batch steps:   4%|▎         | 6/167 [04:26<1:48:54, 40.58s/it]RM batch steps:   4%|▍         | 7/167 [05:15<1:55:07, 43.17s/it]RM batch steps:   5%|▍         | 8/167 [06:02<1:58:12, 44.61s/it]RM batch steps:   5%|▌         | 9/167 [06:57<2:05:53, 47.80s/it]RM batch steps:   6%|▌         | 10/167 [07:45<2:05:28, 47.96s/it]RM batch steps:   7%|▋         | 11/167 [08:31<2:02:46, 47.22s/it]RM batch steps:   7%|▋         | 12/167 [09:13<1:57:48, 45.60s/it]RM batch steps:   7%|▋         | 12/167 [09:55<2:08:08, 49.61s/it]
+chosen and rejected:  tensor([-135.1837, -243.1894,  -57.1710,  -95.3394, -227.7788,  -65.9008,
+        -138.7241,  -99.4532, -304.1525,  -54.0423, -251.3405,  -18.0516]) tensor([-298.9476, -205.2220,  -11.0107, -218.5691, -271.9929,  -84.4161,
+         -33.4039, -161.2566,  -48.7479,  -54.0423,  -60.6017,  -76.6501]) torch.Size([12])
+chosen and rejected:  tensor([-323.0156,  -15.2706,  -13.1521, -100.7611,  -90.3434,  -57.9982,
+         -30.2656,  -66.7050,  -24.1187,  -55.2160, -108.2934,  -11.7358]) tensor([ -90.1662, -178.7937, -166.3350, -138.6332, -164.2537, -287.4996,
+        -217.6113, -190.6770, -175.2346, -101.9358, -123.4060,  -93.7683]) torch.Size([12])
+chosen and rejected:  tensor([ -30.8243, -160.3915,  -62.7484,    0.7151,  -45.9102,  -22.9396,
+         -65.8270,  -39.7464, -153.2744,  -36.7117,  -82.3505, -238.6155]) tensor([-100.6966,  -95.4780,  -89.1595,   -9.4285, -206.4945,  -82.4592,
+        -108.4210, -122.9822,  -97.9679, -156.5495,  -43.7424, -106.9234]) torch.Size([12])
+chosen and rejected:  tensor([ -28.4174,  -26.9673,   -6.0898,  -29.3244, -240.0409,  -73.7199,
+        -133.1606,    7.4321, -174.5684,  -21.8558,  -58.5273,  -49.8067]) tensor([ -72.3307, -107.4246,  -25.2933,  -55.4079, -243.7776,  -29.7767,
+        -308.0613,    0.5824, -151.0380,  -20.2804,  -20.9078, -285.8135]) torch.Size([12])
+chosen and rejected:  tensor([  -3.5285, -157.3615,  -33.3715, -140.8854, -121.0453,  -63.9593,
+        -266.9755, -121.8293, -103.1825,  -75.6085, -139.7925,  -12.2050]) tensor([ -20.7345, -102.2208, -120.4434, -177.2043, -175.9119,  -37.3248,
+        -163.6743, -115.8113, -107.1421, -113.4437,  -16.3843,  -70.4441]) torch.Size([12])
+chosen and rejected:  tensor([ -76.4097,  -73.9198,  -46.7090,  -73.3943, -142.5450,  -40.6070,
+          -8.1104,    1.4339, -133.8433,  -40.9097,  -26.6815,  -45.6846]) tensor([ -56.4153,  -93.1214, -128.0406, -180.1768, -115.2775,  -67.1716,
+         -25.8679, -108.7672, -181.7789, -314.7838, -130.9118,   -7.8922]) torch.Size([12])
+chosen and rejected:  tensor([-147.1624,  -63.4911,  -16.0265, -164.9706,  -29.2171, -165.2881,
+         -75.2545,  -81.0839,  -55.1685,  -45.4826,  -10.7572,  -62.1781]) tensor([-165.7950, -622.7794,  -10.7755,   -9.6899,  -54.3470, -116.3953,
+        -111.0030,  -64.8860, -288.1239, -156.1182,  -52.2771,  -86.5228]) torch.Size([12])
+chosen and rejected:  tensor([ -26.5633,  -99.9109,  -10.7321, -122.7361,  -70.9515, -164.0822,
+         -53.3842,  -44.4314,  -67.7553,  -84.0990,  -20.5253,  -45.8259]) tensor([-100.0013, -362.7886,  -28.8354,  -70.5562,  -70.9515, -297.5844,
+        -213.8689,  -82.0503,  -28.6442,  -66.6655,  -45.5376, -143.5679]) torch.Size([12])
+chosen and rejected:  tensor([-128.3248, -122.4653,  -48.4597,  -36.2139,  -60.1140,  -74.1749,
+         -62.3719, -116.0815,  -40.9626, -182.3506, -101.8178,  -82.0533]) tensor([-159.9161,  -53.3560, -129.6225, -109.6170, -151.7282,  -74.1882,
+         -26.7828,  -80.0613, -120.2456,  -71.3107, -141.2370, -280.2773]) torch.Size([12])
+chosen and rejected:  tensor([ -49.6515,  -12.0937, -138.1493, -139.1825,  -25.8483,  -67.6982,
+         -97.6220,  -89.5314,  -50.1752,    1.1639,  -81.1352,  -97.3128]) tensor([ -54.9705,  -24.4798,  -34.5109, -168.3532,  -70.2150,  -30.1551,
+         -82.4838, -172.6229, -184.1106,  -77.0512,  -83.6351, -177.6942]) torch.Size([12])
+chosen and rejected:  tensor([  -7.3607, -173.6299,    1.8766,   -2.4435,  -25.6528,  -28.0546,
+         -31.3448,  -95.3513,  -18.8452, -105.3817,  -43.8680,  -19.7745]) tensor([ -69.5967, -244.0151, -304.3559,  -46.3191,  -44.2311, -184.2809,
+         -17.8887, -217.8750, -168.5649, -142.4496, -127.9530,  -91.2655]) torch.Size([12])
+chosen and rejected:  tensor([ 2.8558e-01, -1.0181e+02, -1.2954e+02, -1.0913e+01,  4.5859e+00,
+        -3.0013e+02, -1.3634e+02, -5.7435e+00, -3.4238e+01, -5.9251e+01,
+        -5.2824e+01, -1.2045e+02]) tensor([ -45.7489,  -68.9259, -155.9264,  -26.4867,  -21.4354, -105.6602,
+         -88.1045, -153.9265,  -56.3309,  -55.3046, -196.7058,  -89.9458]) torch.Size([12])
+Traceback (most recent call last):
+  File "/home/zhihanliu/shenao_code/mistral_reward_pred/error_analysis.py", line 464, in <module>
+    error_analysis(model, ref_model, tokenizer, "error_selm")
+  File "/home/zhihanliu/shenao_code/mistral_reward_pred/error_analysis.py", line 453, in error_analysis
+    rewards_chosen, rewards_rejected = dpo.inference_step(batch, ref_free=False)
+  File "/home/zhihanliu/shenao_code/mistral_reward_pred/error_analysis.py", line 224, in inference_step
+    ) = self.concatenated_forward(self.ref_model, batch)
+  File "/home/zhihanliu/shenao_code/mistral_reward_pred/error_analysis.py", line 259, in concatenated_forward
+    all_logits = model(
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/zhihanliu/anaconda3/envs/hb/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1158, in forward
+    outputs = self.model(
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhihanliu/anaconda3/envs/hb/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1043, in forward
+    layer_outputs = decoder_layer(
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/zhihanliu/anaconda3/envs/hb/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 770, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhihanliu/.local/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/zhihanliu/anaconda3/envs/hb/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 179, in forward
+    return self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.91 GiB. GPU 
